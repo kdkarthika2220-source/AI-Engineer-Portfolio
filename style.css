@@ -8,29 +8,22 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-
     background: #0f172a;
-
     color: #e2e8f0;
-
     line-height: 1.7;
 }
-
 
 main {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
-
 
 
 /* =========================================================
@@ -51,17 +44,13 @@ main {
     background: #111827;
 }
 
-
 .hero-content {
     max-width: 850px;
 }
 
-
 .hero-tag {
     font-size: 0.95rem;
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
 
     color: #60a5fa;
@@ -69,17 +58,13 @@ main {
     margin-bottom: 15px;
 }
 
-
 .hero h1 {
     font-size: 4rem;
-
     margin-bottom: 10px;
 }
 
-
 .hero h2 {
     font-size: 1.6rem;
-
     font-weight: 500;
 
     color: #cbd5e1;
@@ -87,17 +72,14 @@ main {
     margin-bottom: 20px;
 }
 
-
 .hero-description {
     font-size: 1.1rem;
-
     color: #94a3b8;
 
     max-width: 720px;
 
     margin: 0 auto 30px;
 }
-
 
 
 /* =========================================================
@@ -107,57 +89,52 @@ main {
 .hero-buttons,
 .project-links,
 .contact-links {
-
     display: flex;
-
     gap: 15px;
-
     flex-wrap: wrap;
 }
-
 
 .hero-buttons {
     justify-content: center;
 }
-
 
 .btn {
     display: inline-block;
 
     padding: 12px 22px;
 
+    background: #2563eb;
+    color: #ffffff;
+
+    border: 1px solid #2563eb;
     border-radius: 8px;
 
     text-decoration: none;
-
     font-weight: 600;
 
-    transition:
-        transform 0.3s ease,
-        opacity 0.3s ease;
-}
+    cursor: pointer;
 
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
 
 .btn:hover {
     transform: translateY(-2px);
 
-    opacity: 0.9;
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
 }
 
-
-.primary-btn {
-    background: #2563eb;
-
-    color: white;
-}
-
-
+.primary-btn,
 .secondary-btn {
-    border: 1px solid #475569;
-
-    color: #e2e8f0;
+    background: #2563eb;
+    color: #ffffff;
+    border: 1px solid #2563eb;
 }
-
 
 
 /* =========================================================
@@ -168,17 +145,14 @@ section {
     padding: 70px 0;
 }
 
-
 section h2 {
     font-size: 2rem;
 
     margin-bottom: 30px;
+    padding-bottom: 10px;
 
     border-bottom: 2px solid #334155;
-
-    padding-bottom: 10px;
 }
-
 
 .section-description {
     color: #cbd5e1;
@@ -189,7 +163,6 @@ section h2 {
 }
 
 
-
 /* =========================================================
    EXPERIENCE
 ========================================================= */
@@ -197,12 +170,10 @@ section h2 {
 .experience-grid {
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 25px;
 }
-
 
 .experience-card {
     background: #1e293b;
@@ -212,8 +183,17 @@ section h2 {
     border-radius: 14px;
 
     border: 1px solid #334155;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
 }
 
+.experience-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #475569;
+}
 
 .experience-card h3 {
     font-size: 1.3rem;
@@ -221,11 +201,9 @@ section h2 {
     margin-bottom: 12px;
 }
 
-
 .experience-card p {
     color: #cbd5e1;
 }
-
 
 .card-label {
     color: #60a5fa !important;
@@ -240,7 +218,6 @@ section h2 {
 }
 
 
-
 /* =========================================================
    PROJECTS
 ========================================================= */
@@ -248,12 +225,10 @@ section h2 {
 .project-grid {
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 25px;
 }
-
 
 .project-card {
     background: #1e293b;
@@ -263,8 +238,17 @@ section h2 {
     border-radius: 14px;
 
     border: 1px solid #334155;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
 }
 
+.project-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #475569;
+}
 
 .project-label {
     color: #60a5fa;
@@ -278,18 +262,15 @@ section h2 {
     margin-bottom: 10px;
 }
 
-
 .project-card h3 {
     font-size: 1.45rem;
 
     margin-bottom: 15px;
 }
 
-
 .project-card > p:not(.project-label):not(.project-tech) {
     color: #cbd5e1;
 }
-
 
 .project-tech {
     margin-top: 20px;
@@ -299,11 +280,9 @@ section h2 {
     font-size: 0.92rem;
 }
 
-
 .project-links {
     margin-top: 25px;
 }
-
 
 
 /* =========================================================
@@ -313,12 +292,10 @@ section h2 {
 .skills-container {
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 20px;
 }
-
 
 .skill-group {
     background: #1e293b;
@@ -328,20 +305,29 @@ section h2 {
     border-radius: 12px;
 
     border: 1px solid #334155;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
 }
 
+.skill-group:hover {
+    transform: translateY(-3px);
+
+    border-color: #475569;
+}
 
 .skill-group h3 {
     margin-bottom: 10px;
 
     font-size: 1.15rem;
-}
 
+    color: #e2e8f0;
+}
 
 .skill-group p {
     color: #94a3b8;
 }
-
 
 
 /* =========================================================
@@ -352,21 +338,17 @@ section h2 {
     text-align: center;
 }
 
-
 #contact h2 {
     text-align: left;
 }
-
 
 #contact .section-description {
     margin: 0 auto 25px;
 }
 
-
 .contact-links {
     justify-content: center;
 }
-
 
 
 /* =========================================================
@@ -386,7 +368,6 @@ footer {
 }
 
 
-
 /* =========================================================
    MOBILE
 ========================================================= */
@@ -395,47 +376,44 @@ footer {
 
     .hero {
         min-height: 80vh;
-    }
 
+        padding: 50px 20px;
+    }
 
     .hero h1 {
         font-size: 2.8rem;
     }
 
-
     .hero h2 {
         font-size: 1.25rem;
     }
-
 
     .hero-description {
         font-size: 1rem;
     }
 
-
     section {
         padding: 50px 0;
     }
-
 
     section h2 {
         font-size: 1.6rem;
     }
 
-
     .experience-grid,
     .project-grid,
     .skills-container {
-
         grid-template-columns: 1fr;
     }
 
-
     .hero-buttons,
     .contact-links {
-
         flex-direction: column;
-
         align-items: center;
+    }
+
+    .btn {
+        min-width: 180px;
+        text-align: center;
     }
 }
